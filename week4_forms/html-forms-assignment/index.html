@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form enctype="multipart/form-data" method="post" style="width: 400px">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <div>
+          <label for="full_name">Full Name:</label>
+          <input id="full_name" type="text" name="full_name" />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="phone">Phone:</label>
+          <input id="phone" type="tel" name="phone" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Details</legend>
+
+        <div>
+          <label for="position_applied">Position Applied For:</label>
+          <select name="position_applied" id="position_applied">
+            <option value="frontend_dev">Frontend Dev</option>
+            <option value="backend_dev">Backend Dev</option>
+            <option value="full_stack_dev">Full Stack Dev</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="experience">Experience Level: </label>
+
+          <input type="radio" id="junior" name="experience" value="junior" />
+          <label for="junior"> Junior</label>
+
+          <input
+            type="radio"
+            id="mid_level"
+            name="experience"
+            value="mid_level"
+          />
+          <label for="mid_level">Mid-Level</label>
+
+          <input id="senior" type="radio" name="experience" value="senior" />
+          <label for="senior">Senior</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+
+        <div>
+          <input id="html" type="checkbox" name="html" />
+          <label for="html">HTML</label>
+
+          <input id="css" type="checkbox" name="css" />
+          <label for="css">CSS</label>
+
+          <input id="js" type="checkbox" name="js" />
+          <label for="js">JS</label>
+
+          <input id="python" type="checkbox" name="python" />
+          <label for="python">Python</label>
+
+          <input id="react" type="checkbox" name="react" />
+          <label for="react">React</label>
+        </div>
+      </fieldset>
+
+      <br />
+
+      <div>
+        <label for="resume">Upload Resume (PDF only):</label>
+        <input id="resume" type="file" name="resume" accept=".pdf" />
+      </div>
+      <br />
+      <div>
+        <label for="cover_letter">Cover Letter:</label>
+      </div>
+      <div>
+        <textarea name="cover_letter" id="cover_letter" rows="5"></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit">Send Application:</button>
+      </div>
+    </form>
+  </body>
+</html>

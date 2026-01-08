@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Reservation Form</title>
+  </head>
+  <body>
+    <h1>Travel Reservation Form</h1>
+    <form style="width: 400px" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <div>
+          <label for="full_name">Full Name:</label>
+          <input id="full_name" type="text" name="full_name" />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" />
+        </div>
+
+        <div>
+          <label for="phone">Phone:</label>
+          <input id="phone" type="tel" name="phone" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Travel Information</legend>
+
+        <div>
+          <label for="package">Select a package:</label>
+          <select id="package" name="package">
+            <option value="package1">Package 1</option>
+            <option value="package2">Package 2</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="destination">Destination:</label>
+          <input id="destination" type="text" name="destination" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label for="arrival_date">Arrival Date:</label>
+          <input id="arrival_date" type="date" name="arrival_date" />
+        </div>
+
+        <div>
+          <label for="departure_date">Departure Date:</label>
+          <input id="departure_date" type="date" name="departure_date" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label for="people_number">Number of People:</label>
+          <input id="people_number" type="number" name="people_number" />
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
